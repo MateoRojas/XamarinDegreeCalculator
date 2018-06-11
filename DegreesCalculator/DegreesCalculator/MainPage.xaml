@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DegreesCalculator"
+             x:Class="DegreesCalculator.MainPage">
+
+    <StackLayout>
+
+        <Label Text="Temperatura" Margin="10"/>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="°C:" Margin="5"/>
+            <Label x:Name="labelCelsius" Text="" Margin="5"/>
+            <Button x:Name="plusCelsius" Text="+1" Clicked="plusCelsius_Click" Margin="5"/>
+            <Button x:Name="minusCelsius" Text="-1" Clicked="minusCelsius_Click" Margin="5"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="°F:" Margin="5"/>
+            <Label x:Name="labelFarenheit" Text="" Margin="5"/>
+            <Button x:Name="plusFarenheit" Text="+1" Clicked="plusFarenheit_Click" Margin="5"/>
+            <Button x:Name="minusFarenheit" Text="-1" Clicked="minusFarenheit_Click" Margin="5"/>
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>
